@@ -112,12 +112,16 @@ p {
   border: 0;
   cursor: pointer;
   transition: background 0.15s linear;
+  text-align: center;
 }
 .btn--red {
   background-color: #e84545;
 }
 .btn--red:hover {
   background-color: #ce2f2f;
+}
+.btn--long {
+  min-width: 280px;
 }
 /* ?FEATURES */
 .features {
@@ -231,4 +235,128 @@ p {
   color: #6c7279;
   font-size: 14px;
   line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* ?SOCIAL */
+.social {
+  display: flex;
+}
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+  margin-right: 4px;
+}
+.social__item:hover {
+  background-color: #fff;
+  transition: background 0.5s linear;
+}
+/* ?TESTIMONIALS */
+.reviews {
+  background-color: #53354a;
+}
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews__photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.reviews__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.reviews__content {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  padding-left: 80px;
+}
+.reviews__text {
+  font-family: "Cardo", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.reviews__author {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+/* ?DOWNLOAD */
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+.download__title {
+  font-size: 28px;
+  font-weight: 300;
+  color: #2d3033;
+  margin-bottom: 10px;
+}
+.download__text {
+  font-size: 13px;
+  font-weight: bold;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+/* ?FOOTER */
+.footer {
+  background-color: #3a3e64;
+}
+.footer__block {
+  width: 33.3333%;
+  text-align: center;
+}
+.footer__inner {
+  padding: 75px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer__adress {
+  line-height: 1.5;
+  font-size: 14px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+.social--footer {
+  justify-content: center;
+  border: 3px;
+}
+.footer__text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* ?FOOTER */
+.copyright {
+  padding: 20px 0;
+  background-color: #313454;
+}
+.copyright__text {
+  text-align: center;
+  color: #808080;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.copyright__text span {
+  color: #fff;
 }
